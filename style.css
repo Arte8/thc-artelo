@@ -1,0 +1,32 @@
+body {
+  
+  background: url('IMG_1293.JPG') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color:red;
+  text-align: center;
+  /* animation-name: slidein;
+  animation-duration: 4s;
+  from {background-color: red;}
+  to {background-color: yellow;}  */
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
