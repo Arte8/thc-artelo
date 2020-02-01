@@ -107,6 +107,15 @@ background-size: cover;
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+group {
+   width: 48px;
+   height: 48px;
+}
+
+group img {
+   width: 65%;
+}
+
 </style>
 </head>
 
@@ -217,6 +226,23 @@ function showSlides() {
 }
 </script>
 
+<div id="group">
+    <img src="7660535d-b4a2-4ed7-8911-1dfa30432fac.jpeg" alt="" />
+</div>
+
+<script type="text/javascript">
+(function() {
+
+var img = document.getElementById('group').firstChild;
+img.onload = function() {
+    if(img.height > img.width) {
+        img.height = '35%';
+        img.width = 'auto';
+    }
+};
+
+}());
+</script>
 
    <h5>coded by: artelo.studio</h5>
 </body>
